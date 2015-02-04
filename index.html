@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kuta Admin 3.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="library/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!-- Kuta -->		
+		<link href="library/css/styles.css" rel="stylesheet" media="screen">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="library/bootstrap/assets/js/html5shiv.js"></script>
+		<script src="library/bootstrap/assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- top header navbar -->
+		<nav class="navbar navbar-top-header hidden-xs" role="navigation">
+			<div class="navbar-header">
+				<img class="logo" src="sample-images/logo.png" />
+			</div>
+			
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder=".....">
+				</div>
+				<button type="submit" class="btn btn-no-rc btn-v">Search</button>
+			</form>
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#"><i class="icon-earth"></i></a></li>
+				<li><a href="#"><i class="icon-email"></i></a></li>
+				<li><a href="#"><i class="icon-settings-2"></i></a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-user-6"></i>
+					</a>
+					
+					<ul class="dropdown-menu dropdown-user-account">
+					
+						<li class="account-img-container">
+							<img class="thumb account-img" src="sample-images/elang-th-01.jpg">
+						</li>
+						
+						<li class="account-info">
+							<h3>Rains Peter Elang Aro</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>
+								<a href="#">Edit</a> | <a href="#">Account Settings</a>
+							</p>
+						</li>
+						
+						<li class="account-footer">
+							<a class="btn btn-sm btn-primary btn-flat" href="#">Change avatar</a>
+							<a class="btn btn-sm btn-danger btn-flat" href="#">Logout</a>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- ./ top header navbar -->
+		
+		<div id="main_wrapper">
+			<div id="main_content">
+			
+				<!-- page heading -->
+				<div class="page-heading">				
+					<h2 class="page-title">
+						<i class="icon-home"></i> Dashboard
+					</h2>					
+					<div class="page-info hidden-xs">
+						<ul class="stats">
+							<li>
+								<span class="large text-warning">2354</span>
+								<span class="mini">visitors</span>
+							</li>
+							<li>
+								<span class="large text-info">4523</span>
+								<span class="mini">members</span>
+							</li>
+							<li>
+								<span class="large text-success">5673</span>
+								<span class="mini">orders</span>
+							</li>
+							<li>
+								<span class="large text-danger">15</span>
+								<span class="mini">cancellation</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- ./ page heading -->
+				
+				<!-- breadcrumb -->
+				<ol class="breadcrumb breadcrumb-main">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Main page</a></li>
+					<li class="active">Dashboard</li>
+				</ol>
+				<!-- ./ breadcrumb -->
+				
+				<!-- contents -->
+				<div class="row">
+					<div class="col-sm-8 col-md-4 col-lg-4">
+						<!-- ** donut chart ** -->
+						<div id="donut-pie-div" data-legend="false" data-value="[['Item sold',165], ['Messages',79], ['Social share',143], ['Blog posts',104]]"   data-value2="0" data-colors='[ "#5cb85c","#b94a48","#428bca","#5bc0de","#50204a","#b7d051" ]' style="width:100%;height:280px;margin-top:-30px;margin-bottom:-20px;">
+						</div>
+						<!-- ** ./ donut chart ** -->
+					</div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+						<div class="panel panel-widget-one panel-success">
+							<div class="panel-heading">
+								<i class="icon-wallet"></i>
+								<div class="label-wrapper">
+									<a href="#" class="btn btn-success">Item Sold</a>
+								</div>
+							</div>
+							<div class="panel-body">
+								<span class="text-main">165</span>
+								<span class="text-secondary">24 hours</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+						<div class="panel panel-widget-one panel-dark panel-danger">
+							<div class="panel-heading">
+								<i class="icon-mail-5"></i>
+								<div class="label-wrapper">
+									<a href="#" class="btn btn-danger">Messages</a>
+								</div>
+							</div>
+							<div class="panel-body">
+								<span class="text-main">79</span>
+								<span class="text-secondary">24 hours</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+						<div class="panel panel-widget-one panel-dark panel-primary">
+							<div class="panel-heading">
+								<i class="icon-like"></i>
+								<div class="label-wrapper">
+									<a href="#" class="btn btn-primary">Social Share</a>
+								</div>
+							</div>
+							<div class="panel-body">
+								<span class="text-main">143</span>
+								<span class="text-secondary">24 hours</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+						<div class="panel panel-widget-one panel-info">
+							<div class="panel-heading">
+								<i class="icon-news"></i>
+								<div class="label-wrapper">
+									<a href="#" class="btn btn-info">Blog Posts</a>
+								</div>
+							</div>
+							<div class="panel-body">
+								<span class="text-main">104</span>
+								<span class="text-secondary">24 hours</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-8 col-lg-8 hidden-xs">
+						<div class="panel panel-default">
+							<div class="panel-body panel-body-hex">
+								<div class="hex-group">
+									<div class="top">
+										<div class="hex hex-default">
+											<div class="inner">
+												<img src="sample-images/jeun-th-02.jpg" class="img-circle" />
+												<hr>
+												<p>Top sellers</p>
+											</div>
+											<a href="#"></a>
+											<div class="corner-1"></div>
+											<div class="corner-2"></div>
+										</div>
+										
+										<div class="hex hex-default">
+											<div class="inner">
+												<img src="sample-images/2.png" class="img-circle" />
+												<hr>
+												<p>Popular items</p>
+											</div>
+											<a href="#"></a>
+											<div class="corner-1"></div>
+											<div class="corner-2"></div>
+										</div>
+										
+										<div class="hex hex-default">
+											<div class="inner">
+												<img src="sample-images/elang-th-02.jpg" class="img-circle" />
+												<hr>
+												<p>Best affiliates</p>
+											</div>
+											<a href="#"></a>
+											<div class="corner-1"></div>
+											<div class="corner-2"></div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									
+									<div class="hex hex-info">
+										<div class="inner">
+											<i class="hex-title-icon icon-chart"></i>
+											<hr>
+											<p>Web Stats</p>
+										</div>		
+										<a href="#"></a>
+										<div class="corner-1"></div>
+										<div class="corner-2"></div>
+									</div>
+									
+									<div class="hex hex-success">
+										<div class="inner">
+											<i class="hex-title-icon icon-banknote"></i>
+											<hr>
+											<p>Item sold</p>
+										</div>		
+										<a href="#"></a>
+										<div class="corner-1"></div>
+										<div class="corner-2"></div>
+									</div>
+									
+									<div class="hex hex-primary">
+										<div class="inner">
+											<i class="hex-title-icon icon-users-3"></i>
+											<hr>
+											<p>Registered users</p>
+										</div>		
+										<a href="#"></a>
+										<div class="corner-1"></div>
+										<div class="corner-2"></div>
+									</div>
+									
+									<div class="hex hex-warning">
+										<div class="inner">
+											<i class="hex-title-icon icon-bubbles-4"></i>
+											<hr>
+											<p>Comments</p>
+										</div>		
+										<a href="#"></a>
+										<div class="corner-1"></div>
+										<div class="corner-2"></div>
+									</div>
+									<div class="clearfix"></div>
+									
+									<div class="bottom">
+										<div class="hex hex-inverse">
+											<div class="inner">
+												<h4 class="title">Pending</h4>
+												<hr>
+												<p><small>25 new items submitted (24h)</small></p>
+											</div>
+											<a href="#"></a>
+											<div class="corner-1"></div>
+											<div class="corner-2"></div>
+										</div>
+										
+										<div class="hex hex-inverse">
+											<div class="inner">
+												<h4 class="title">Rejected</h4>
+												<hr>
+												<p><small>11 items need improvements</small></p>
+											</div>
+											<a href="#"></a>
+											<div class="corner-1"></div>
+											<div class="corner-2"></div>
+										</div>
+										
+										<div class="hex hex-inverse">
+											<div class="inner">
+												<h4 class="title">Refunded</h4>
+												<hr>
+												<p><small>3 users request for refund</small></p>
+											</div>
+											<a href="#"></a>
+											<div class="corner-1"></div>
+											<div class="corner-2"></div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default panel-quick-post">
+							<div class="panel-heading">
+								<h4 class="panel-title">Quick Post</h4>
+							</div>
+							<div class="input-wrapper">
+								<input type="text" class="form-control" id="postTitle" placeholder="Title">
+							</div>
+							<textarea id="redactor_content" class="fullRedactor" name="content"></textarea>
+							<div class="panel-footer">
+								<a href="#" class="btn btn-no-rc btn-primary">Save draft</a>
+								<a href="#" class="btn btn-no-rc btn-danger">Publish</a>
+							</div>
+						</div>
+						
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Vertical bar chart</h3>
+							</div>
+							<div class="panel-body">
+								<!-- ** vertical bar chart ** -->
+								<div id="vertical-bar-div" data-legend="true" data-value='[[230, 470, 340, 230],[470, 220, 650, 890],[200, 600, 700, 1000],[460, 210, 690, 820],[260, 440, 320, 200]]' data-ticks='["May", "June", "July", "August"]' data-labels="[{label:'Label one'},{label:'Label two'},{label:'Label three'},{label:'Label four'},{label:'Label five'}]" data-colors='[ "#b94a48","#feb847","#464646","#428bca","#50204a","#b7d051" ]' style="width:100%;height:360px;"></div>
+								<!-- ** ./ vertical bar chart ** -->
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="row">
+							<div class="col-sm-6 col-md-12 col-lg-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">Please Complete your profile!</h3>
+									</div>
+									
+									<div class="list-group list-group-mp">
+										<a href="#" class="list-group-item">
+											<i class="icon-settings-2 pull-left"></i>
+											<h4 class="list-group-item-heading">General</h4>
+											<div class="progress progress-xs">
+												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+													<span class="sr-only">30% Complete (danger)</span>
+												</div>
+											</div>
+											<p class="list-group-item-text">General settings</p>
+										</a>
+										
+										<a href="#" class="list-group-item">
+											<i class="icon-key-3 pull-left"></i>
+											<h4 class="list-group-item-heading">Security</h4>
+											<div class="progress progress-xs">
+												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+													<span class="sr-only">60% Complete (warning)</span>
+												</div>
+											</div>
+											<p class="list-group-item-text">Security settings</p>
+										</a>
+										
+										<a href="#" class="list-group-item">
+											<i class="icon-lock-3 pull-left"></i>
+											<h4 class="list-group-item-heading">Privacy</h4>
+											<div class="progress progress-xs">
+												<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+													<span class="sr-only">80% Complete (info)</span>
+												</div>
+											</div>
+											<p class="list-group-item-text">Privacy settings</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-sm-6 col-md-12 col-lg-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">Online users</h3>
+									</div>
+									<div class="list-group list-group-mp">
+										<a href="#" class="list-group-item">
+											<img class="img-circle pull-left" src="sample-images/jeun-th-04.jpg">
+											<i class="indicator available icon-radio-checked pull-right"></i>
+											<h4 class="list-group-item-heading">Geunevere</h4>
+											<p class="list-group-item-text">Kuta - Bali, Indonesia</p>
+										</a>
+										
+										<a href="#" class="list-group-item">
+											<img class="img-circle pull-left" src="sample-images/jeun-th-02.jpg">
+											<i class="indicator busy icon-radio-checked pull-right"></i>
+											<h4 class="list-group-item-heading">Calista</h4>
+											<p class="list-group-item-text">Surabaya - East Java, Indonesia</p>
+										</a>
+										
+										<a href="#" class="list-group-item">
+											<img class="img-circle pull-left" src="sample-images/jeun-th-01.jpg">
+											<i class="indicator idle icon-radio-checked pull-right"></i>
+											<h4 class="list-group-item-heading">Aurelia</h4>
+											<p class="list-group-item-text">Medan - North Sumatra, Indonesia</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-sm-6 col-md-12 col-lg-12">
+								<div class="panel panel-widget-one panel-default">
+									<div class="btn-toolbar">
+										<a href="#" class="btn btn-sm btn-no-rc btn-default">Accept</a>
+										<a href="#" class="btn btn-sm btn-no-rc btn-inverse">Ignore</a>
+									</div>
+									<div class="panel-heading">
+										<h3 class="panel-title" style="color:#fdfdfd;">Friend Request</h3>
+										<div class="panel-heading-img">
+											<img src="sample-images/jeun-elang-01.jpg" />
+										</div>
+										<div class="label-wrapper">
+											<span class="label label-primary">Elang Aro Serafiel</span>
+										</div>
+									</div>
+									<div class="panel-body profile">
+										<a href="#" class="profile-img">
+											<img class="img-circle" src="sample-images/elang-th-02.jpg" />
+										</a>
+										<ul class="list-inline pull-right">
+											<li>
+												<span class="text-main">145</span>
+												<span class="text-secondary">Followers</span>
+											</li>
+											<li>
+												<span class="text-main">1125</span>
+												<span class="text-secondary">Friends</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-sm-6 col-md-12 col-lg-12">
+								<div class="panel panel-widget-one panel-dark panel-default">
+									<div class="panel-heading panel-heading-hex">
+										<h3 class="panel-title">Tools</h3>
+										<a href="#" class="btn btn-circle btn-inverse btn-left-hex top_tooltip" title="Users"><i class="icon-users-2"></i></a>
+										<a href="#" class="btn btn-circle btn-inverse btn-right-hex top_tooltip" title="Privacy"><i class="icon-lock"></i></a>
+									</div>
+									<div class="panel-body panel-body-hex">
+										<div class="hex hex-inverse">
+											<div class="inner">
+												<h4 class="title">Settings</h4>
+												<hr>
+												<p><small>Account settings and configurations</small></p>
+											</div>
+											<a href="#"></a>
+											<div class="corner-1"></div>
+											<div class="corner-2"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+						
+				<!-- ./ contents -->				
+			</div>
+			
+			<!-- sidebar -->
+			<ul id="sidebar" class="nav nav-pills nav-stacked">
+				<li class="avatar">
+					<a href="#">
+						<img src="sample-images/elang-th-01.jpg">
+						<span>Rains Peter Elang Aro</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="index.html">
+						<i class="icon-home-3"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-params"></i>
+						<span>UI</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="typography.html">
+								<i class="icon-stack-3"></i> Typography
+							</a>
+						</li>
+						<li>
+							<a href="tables.html">
+								<i class="icon-stack-3"></i> Tables
+							</a>
+						</li>
+						<li>
+							<a href="buttons.html">
+								<i class="icon-stack-3"></i> Buttons
+							</a>
+						</li>
+						<li>
+							<a href="icons.html">
+								<i class="icon-stack-3"></i> Icons
+							</a>
+						</li>
+						<li>
+							<a href="dropdowns.html">
+								<i class="icon-stack-3"></i> Dropdowns
+							</a>
+						</li>
+						<li>
+							<a href="tabs.html">
+								<i class="icon-stack-3"></i> Tabs
+							</a>
+						</li>
+						<li>
+							<a href="breadcrumbs-paginations.html">
+								<i class="icon-stack-3"></i> Breadcrums &amp; Paginations
+							</a>
+						</li>
+						<li>
+							<a href="alerts.html">
+								<i class="icon-stack-3"></i> Alerts &amp; Progress Bars
+							</a>
+						</li>
+						<li>
+							<a href="panels.html">
+								<i class="icon-stack-3"></i> Panels
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="charts.html">
+						<i class="icon-bars-3"></i>
+						<span>Charts</span>
+					</a>
+				</li>
+				<li>
+					<a href="forms.html">
+						<i class="icon-browser"></i>
+						<span>Forms</span>
+					</a>
+				</li>
+			</ul>
+			<!-- ./ sidebar -->
+		</div>
+	
+		<!-- base -->
+		<script src="library/js/jquery.js"></script>
+		<script src="library/js/jquery-migrate-1.2.1.js"></script>
+		<script src="library/bootstrap/dist/js/bootstrap.min.js"></script>	
+
+		<!-- addons -->
+		<script src="library/plugins/moment.min.js"></script>
+		<script src="library/plugins/chart-plugins.js"></script>
+		<script src="library/plugins/redactor/redactor.min.js"></script>
+		<script src="library/plugins/jquery.nice-file-input.js"></script>
+		<script src="library/plugins/selectize.min.js"></script>
+		<script src="library/plugins/jquery.icheck.min.js"></script>
+		<script src="library/plugins/ion.rangeSlider.min.js"></script>
+		<script src="library/plugins/pikaday.js"></script>
+		<script src="library/plugins/pikaday.jquery.js"></script>
+		<script src="library/js/loader.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alerts &amp; Progress Bars - Kuta Admin 3.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="library/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!-- Kuta -->		
+		<link href="library/css/styles.css" rel="stylesheet" media="screen">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="library/bootstrap/assets/js/html5shiv.js"></script>
+		<script src="library/bootstrap/assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- top header navbar -->
+		<nav class="navbar navbar-top-header hidden-xs" role="navigation">
+			<div class="navbar-header">
+				<img class="logo" src="sample-images/logo.png" />
+			</div>
+			
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder=".....">
+				</div>
+				<button type="submit" class="btn btn-no-rc btn-v">Search</button>
+			</form>
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#"><i class="icon-earth"></i></a></li>
+				<li><a href="#"><i class="icon-email"></i></a></li>
+				<li><a href="#"><i class="icon-settings-2"></i></a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-user-6"></i>
+					</a>
+					
+					<ul class="dropdown-menu dropdown-user-account">
+					
+						<li class="account-img-container">
+							<img class="thumb account-img" src="sample-images/elang-th-01.jpg">
+						</li>
+						
+						<li class="account-info">
+							<h3>Rains Peter Elang Aro</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>
+								<a href="#">Edit</a> | <a href="#">Account Settings</a>
+							</p>
+						</li>
+						
+						<li class="account-footer">
+							<a class="btn btn-sm btn-primary btn-flat" href="#">Change avatar</a>
+							<a class="btn btn-sm btn-danger btn-flat" href="#">Logout</a>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- ./ top header navbar -->
+		
+		<div id="main_wrapper">
+			<div id="main_content">
+				
+				<!-- page heading -->
+				<div class="page-heading">				
+					<h2 class="page-title">
+						<i class="icon-params"></i> Alerts &amp; Progress Bars
+					</h2>					
+					<div class="page-info hidden-xs">
+						<ul class="stats">
+							<li>
+								<span class="large text-warning">2354</span>
+								<span class="mini">visitors</span>
+							</li>
+							<li>
+								<span class="large text-info">4523</span>
+								<span class="mini">members</span>
+							</li>
+							<li>
+								<span class="large text-success">5673</span>
+								<span class="mini">orders</span>
+							</li>
+							<li>
+								<span class="large text-danger">15</span>
+								<span class="mini">cancellation</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- ./ page heading -->
+				
+				<!-- breadcrumb -->
+				<ol class="breadcrumb breadcrumb-main">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">UI</a></li>
+					<li class="active">Alerts &amp; Progress Bars</li>
+				</ol>
+				<!-- ./ breadcrumb -->
+				
+				<!-- contents -->
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Alerts</h4>
+							</div>
+							<div class="panel-body">
+								<div id="alert1" class="alert1 alert alert-success alert-dismissable">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+									<strong>Well done!</strong> You successfully read this important alert message.
+								</div>
+								
+								<div id="alert2" class="alert alert-info alert-dismissable">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+									<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+								</div>
+								
+								<div id="alert3" class="alert alert-warning alert-dismissable">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+									<strong>Warning!</strong> Best check yo self, you're not looking too good.
+								</div>
+								
+								<div id="alert4" class="alert alert-danger alert-dismissable">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+									<strong>Oh snap!</strong> Change a few things up and try submitting again.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Progress Bars</h4>
+							</div>
+							<div class="panel-body">
+							
+								<div class="progress progress-xs">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-xs">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-xs">
+									<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+										<span class="sr-only">20% Complete</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-xs">
+									<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+										<span class="sr-only">60% Complete (warning)</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-xs">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+										<span class="sr-only">80% Complete</span>
+									</div>
+								</div>
+								
+								<hr />
+								
+								<div class="progress progress-sm">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-sm">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-sm">
+									<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+										<span class="sr-only">20% Complete</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-sm">
+									<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+										<span class="sr-only">60% Complete (warning)</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-sm">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+										<span class="sr-only">80% Complete</span>
+									</div>
+								</div>
+								
+								<div class="progress progress-sm progress-striped active">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								
+								<hr />
+								
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+								
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								
+								<div class="progress">
+									<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+										<span class="sr-only">20% Complete</span>
+									</div>
+								</div>
+								
+								<div class="progress">
+									<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+										<span class="sr-only">60% Complete (warning)</span>
+									</div>
+								</div>
+								
+								<div class="progress">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+										<span class="sr-only">80% Complete</span>
+									</div>
+								</div>
+								
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" style="width: 35%">
+										<span class="sr-only">35% Complete (success)</span>
+									</div>
+									<div class="progress-bar progress-bar-warning" style="width: 20%">
+										<span class="sr-only">20% Complete (warning)</span>
+									</div>
+									<div class="progress-bar progress-bar-danger" style="width: 10%">
+										<span class="sr-only">10% Complete (danger)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ./ contents -->
+			</div>
+			
+			<!-- sidebar -->
+			<ul id="sidebar" class="nav nav-pills nav-stacked">
+				<li class="avatar">
+					<a href="#">
+						<img src="sample-images/elang-th-01.jpg">
+						<span>Rains Peter Elang Aro</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<i class="icon-home-3"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li class="dropdown active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-params"></i>
+						<span>UI</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="typography.html">
+								<i class="icon-stack-3"></i> Typography
+							</a>
+						</li>
+						<li>
+							<a href="tables.html">
+								<i class="icon-stack-3"></i> Tables
+							</a>
+						</li>
+						<li>
+							<a href="buttons.html">
+								<i class="icon-stack-3"></i> Buttons
+							</a>
+						</li>
+						<li>
+							<a href="icons.html">
+								<i class="icon-stack-3"></i> Icons
+							</a>
+						</li>
+						<li>
+							<a href="dropdowns.html">
+								<i class="icon-stack-3"></i> Dropdowns
+							</a>
+						</li>
+						<li>
+							<a href="tabs.html">
+								<i class="icon-stack-3"></i> Tabs
+							</a>
+						</li>
+						<li>
+							<a href="breadcrumbs-paginations.html">
+								<i class="icon-stack-3"></i> Breadcrums &amp; Paginations
+							</a>
+						</li>
+						<li class="active">
+							<a href="alerts.html">
+								<i class="icon-stack-3"></i> Alerts &amp; Progress Bars
+							</a>
+						</li>
+						<li>
+							<a href="panels.html">
+								<i class="icon-stack-3"></i> Panels
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="charts.html">
+						<i class="icon-bars-3"></i>
+						<span>Charts</span>
+					</a>
+				</li>
+				<li>
+					<a href="forms.html">
+						<i class="icon-browser"></i>
+						<span>Forms</span>
+					</a>
+				</li>
+			</ul>
+			<!-- ./ sidebar -->
+		</div>
+	
+		<!-- base -->
+		<script src="library/js/jquery.js"></script>
+		<script src="library/js/jquery-migrate-1.2.1.js"></script>
+		<script src="library/bootstrap/dist/js/bootstrap.min.js"></script>	
+
+		<!-- addons -->
+		<script src="library/plugins/moment.min.js"></script>
+		<script src="library/plugins/chart-plugins.js"></script>
+		<script src="library/plugins/redactor/redactor.min.js"></script>
+		<script src="library/plugins/jquery.nice-file-input.js"></script>
+		<script src="library/plugins/selectize.min.js"></script>
+		<script src="library/plugins/jquery.icheck.min.js"></script>
+		<script src="library/plugins/ion.rangeSlider.min.js"></script>
+		<script src="library/plugins/pikaday.js"></script>
+		<script src="library/plugins/pikaday.jquery.js"></script>
+		<script src="library/js/loader.js"></script>
+		
+	</body>
+</html>

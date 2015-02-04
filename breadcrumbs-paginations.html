@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Breadcrums &amp; Paginations - Kuta Admin 3.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="library/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!-- Kuta -->		
+		<link href="library/css/styles.css" rel="stylesheet" media="screen">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="library/bootstrap/assets/js/html5shiv.js"></script>
+		<script src="library/bootstrap/assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- top header navbar -->
+		<nav class="navbar navbar-top-header hidden-xs" role="navigation">
+			<div class="navbar-header">
+				<img class="logo" src="sample-images/logo.png" />
+			</div>
+			
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder=".....">
+				</div>
+				<button type="submit" class="btn btn-no-rc btn-v">Search</button>
+			</form>
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#"><i class="icon-earth"></i></a></li>
+				<li><a href="#"><i class="icon-email"></i></a></li>
+				<li><a href="#"><i class="icon-settings-2"></i></a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-user-6"></i>
+					</a>
+					
+					<ul class="dropdown-menu dropdown-user-account">
+					
+						<li class="account-img-container">
+							<img class="thumb account-img" src="sample-images/elang-th-01.jpg">
+						</li>
+						
+						<li class="account-info">
+							<h3>Rains Peter Elang Aro</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>
+								<a href="#">Edit</a> | <a href="#">Account Settings</a>
+							</p>
+						</li>
+						
+						<li class="account-footer">
+							<a class="btn btn-sm btn-primary btn-flat" href="#">Change avatar</a>
+							<a class="btn btn-sm btn-danger btn-flat" href="#">Logout</a>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- ./ top header navbar -->
+		
+		<div id="main_wrapper">
+			<div id="main_content">
+				
+				<!-- page heading -->
+				<div class="page-heading">				
+					<h2 class="page-title">
+						<i class="icon-params"></i> Breadcrums &amp; Paginations
+					</h2>					
+					<div class="page-info hidden-xs">
+						<ul class="stats">
+							<li>
+								<span class="large text-warning">2354</span>
+								<span class="mini">visitors</span>
+							</li>
+							<li>
+								<span class="large text-info">4523</span>
+								<span class="mini">members</span>
+							</li>
+							<li>
+								<span class="large text-success">5673</span>
+								<span class="mini">orders</span>
+							</li>
+							<li>
+								<span class="large text-danger">15</span>
+								<span class="mini">cancellation</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- ./ page heading -->
+				
+				<!-- breadcrumb -->
+				<ol class="breadcrumb breadcrumb-main">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">UI</a></li>
+					<li class="active">Breadcrums &amp; Paginations</li>
+				</ol>
+				<!-- ./ breadcrumb -->
+				
+				<!-- contents -->
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Breadcrumbs</h3>
+							</div>
+							<div class="panel-body demo">
+								<ol class="breadcrumb">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Library</a></li>
+									<li class="active">Data</li>
+								</ol>
+								
+								<ol class="breadcrumb breadcrumb-info">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Library</a></li>
+									<li class="active">Data</li>
+								</ol>
+								
+								<ol class="breadcrumb breadcrumb-primary">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Library</a></li>
+									<li class="active">Data</li>
+								</ol>
+								
+								<ol class="breadcrumb breadcrumb-success">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Library</a></li>
+									<li class="active">Data</li>
+								</ol>
+								
+								<ol class="breadcrumb breadcrumb-warning">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Library</a></li>
+									<li class="active">Data</li>
+								</ol>
+								
+								<ol class="breadcrumb breadcrumb-danger">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Library</a></li>
+									<li class="active">Data</li>
+								</ol>
+								
+								<ol class="breadcrumb breadcrumb-dark">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Library</a></li>
+									<li class="active">Data</li>
+								</ol>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Paginations</h3>
+							</div>
+							<div class="panel-body demo">
+								<ul class="pagination">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+								
+								<ul class="pagination pagination-info">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+								
+								<ul class="pagination pagination-primary">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+								
+								<ul class="pagination pagination-success">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+								
+								<ul class="pagination pagination-warning">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+								
+								<ul class="pagination pagination-danger">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ./ contents -->
+			</div>
+			
+			<!-- sidebar -->
+			<ul id="sidebar" class="nav nav-pills nav-stacked">
+				<li class="avatar">
+					<a href="#">
+						<img src="sample-images/elang-th-01.jpg">
+						<span>Rains Peter Elang Aro</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<i class="icon-home-3"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li class="dropdown active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-params"></i>
+						<span>UI</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="typography.html">
+								<i class="icon-stack-3"></i> Typography
+							</a>
+						</li>
+						<li>
+							<a href="tables.html">
+								<i class="icon-stack-3"></i> Tables
+							</a>
+						</li>
+						<li>
+							<a href="buttons.html">
+								<i class="icon-stack-3"></i> Buttons
+							</a>
+						</li>
+						<li>
+							<a href="icons.html">
+								<i class="icon-stack-3"></i> Icons
+							</a>
+						</li>
+						<li>
+							<a href="dropdowns.html">
+								<i class="icon-stack-3"></i> Dropdowns
+							</a>
+						</li>
+						<li>
+							<a href="tabs.html">
+								<i class="icon-stack-3"></i> Tabs
+							</a>
+						</li>
+						<li class="active">
+							<a href="breadcrumbs-paginations.html">
+								<i class="icon-stack-3"></i> Breadcrums &amp; Paginations
+							</a>
+						</li>
+						<li>
+							<a href="alerts.html">
+								<i class="icon-stack-3"></i> Alerts &amp; Progress Bars
+							</a>
+						</li>
+						<li>
+							<a href="panels.html">
+								<i class="icon-stack-3"></i> Panels
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="charts.html">
+						<i class="icon-bars-3"></i>
+						<span>Charts</span>
+					</a>
+				</li>
+				<li>
+					<a href="forms.html">
+						<i class="icon-browser"></i>
+						<span>Forms</span>
+					</a>
+				</li>
+			</ul>
+			<!-- ./ sidebar -->
+		</div>
+	
+		<!-- base -->
+		<script src="library/js/jquery.js"></script>
+		<script src="library/js/jquery-migrate-1.2.1.js"></script>
+		<script src="library/bootstrap/dist/js/bootstrap.min.js"></script>	
+
+		<!-- addons -->
+		<script src="library/plugins/moment.min.js"></script>
+		<script src="library/plugins/chart-plugins.js"></script>
+		<script src="library/plugins/redactor/redactor.min.js"></script>
+		<script src="library/plugins/jquery.nice-file-input.js"></script>
+		<script src="library/plugins/selectize.min.js"></script>
+		<script src="library/plugins/jquery.icheck.min.js"></script>
+		<script src="library/plugins/ion.rangeSlider.min.js"></script>
+		<script src="library/plugins/pikaday.js"></script>
+		<script src="library/plugins/pikaday.jquery.js"></script>
+		<script src="library/js/loader.js"></script>
+		
+	</body>
+</html>

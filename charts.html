@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Charts - Kuta Admin 3.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="library/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!-- Kuta -->		
+		<link href="library/css/styles.css" rel="stylesheet" media="screen">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="library/bootstrap/assets/js/html5shiv.js"></script>
+		<script src="library/bootstrap/assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- top header navbar -->
+		<nav class="navbar navbar-top-header hidden-xs" role="navigation">
+			<div class="navbar-header">
+				<img class="logo" src="sample-images/logo.png" />
+			</div>
+			
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder=".....">
+				</div>
+				<button type="submit" class="btn btn-no-rc btn-v">Search</button>
+			</form>
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#"><i class="icon-earth"></i></a></li>
+				<li><a href="#"><i class="icon-email"></i></a></li>
+				<li><a href="#"><i class="icon-settings-2"></i></a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-user-6"></i>
+					</a>
+					
+					<ul class="dropdown-menu dropdown-user-account">
+					
+						<li class="account-img-container">
+							<img class="thumb account-img" src="sample-images/elang-th-01.jpg">
+						</li>
+						
+						<li class="account-info">
+							<h3>Rains Peter Elang Aro</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>
+								<a href="#">Edit</a> | <a href="#">Account Settings</a>
+							</p>
+						</li>
+						
+						<li class="account-footer">
+							<a class="btn btn-sm btn-primary btn-flat" href="#">Change avatar</a>
+							<a class="btn btn-sm btn-danger btn-flat" href="#">Logout</a>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- ./ top header navbar -->
+		
+		<div id="main_wrapper">
+			<div id="main_content">
+				
+				<!-- page heading -->
+				<div class="page-heading">				
+					<h2 class="page-title">
+						<i class="icon-bars-3"></i> Charts
+					</h2>					
+					<div class="page-info hidden-xs">
+						<ul class="stats">
+							<li>
+								<span class="large text-warning">2354</span>
+								<span class="mini">visitors</span>
+							</li>
+							<li>
+								<span class="large text-info">4523</span>
+								<span class="mini">members</span>
+							</li>
+							<li>
+								<span class="large text-success">5673</span>
+								<span class="mini">orders</span>
+							</li>
+							<li>
+								<span class="large text-danger">15</span>
+								<span class="mini">cancellation</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- ./ page heading -->
+				
+				<!-- breadcrumb -->
+				<ol class="breadcrumb breadcrumb-main">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Plugins</a></li>
+					<li class="active">Charts</li>
+				</ol>
+				<!-- ./ breadcrumb -->
+				
+				<!-- contents -->
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Horizontal Bar Chart</h4>
+							</div>
+							<div class="panel-body">
+								<!-- ** horizontal bar chart ** -->
+								<div id="horizontal-bar-div" style="height:300px;width:100%;" data-legend="false" data-value='[[[2,1], [4,2], [6,3], [3,4]],[[5,1], [1,2], [3,3], [4,4]],[[4,1], [7,2], [1,3], [2,4]]]' data-labels="[{label:'Label 1'},{label:'Label 2'},{label:'Label 3'}]" data-colors='[ "#b94a48","#feb847","#464646","#428bca","#50204a","#c09853" ]'></div>
+								<!-- ** ./ horizontal bar chart ** -->
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Vertical Bar Chart</h4>
+							</div>
+							<div class="panel-body">
+								<!-- ** vertical bar chart ** -->
+								<div id="vertical-bar-div" data-legend="false" data-value='[[200, 600, 700, 1000],[460, 210, 690, 820],[260, 440, 320, 200]]' data-ticks='["May", "June", "July", "August"]' data-labels="[{label:'One'},{label:'Two'},{label:'Three'}]" data-colors='[ "#b94a48","#feb847","#464646","#428bca","#50204a","#c09853" ]' style="width:100%;height:300px;"></div>
+								<!-- ** ./ vertical bar chart ** -->
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Pie Chart</h4>
+							</div>
+							<div class="panel-body">
+								<!-- ** pie chart ** -->						
+								<div id="pie-div" style="width:100%;height:300px;" data-legend="false" data-content="[['Heavy Industry', 12],['Retail', 9], ['Light Industry', 14], ['Out of home', 16],['Commuting', 7], ['Orientation', 9]]" data-colors='[ "#b94a48","#feb847","#464646","#428bca","#50204a","#c09853" ]'></div>
+								<!-- ** ./ pie chart ** -->
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Donut Chart</h4>
+							</div>
+							<div class="panel-body">
+								<!-- ** donut chart ** -->
+								<div id="donut-pie-div" data-legend="false" data-value="[['abcd',16], ['efgh',8], ['ijkl',14], ['mnop',16], ['qrste',8], ['opresf',14]]"   data-value2="0" data-colors='[ "#b94a48","#feb847","#464646","#428bca","#50204a","#c09853" ]' style="width:100%;height:300px;">
+								</div>
+								<!-- ** ./ donut chart ** -->
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Line Chart</h4>
+							</div>
+							<div class="panel-body">
+								<!-- ** line chart ** -->
+								<div id="line-chart-div" style="width:100%; height:300px;" data-legend="false" data-content="[[1,2,3,4,5,6,7,8,9], [2,3,4,5,6,7,8,9,10], [3,4,5,6,7,8,9,10,11], [4,5,6,7,8,9,10,11,12]]" data-colors='[ "#b94a48","#feb847","#464646","#428bca","#50204a","#c09853" ]'></div>
+								<!-- ** ./ line chart ** -->
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Area Chart</h4>
+							</div>
+							<div class="panel-body">
+								<!-- ** area chart ** -->
+								<div id="area-chart-div" style="width:100%; height:300px;" data-legend="false" data-content="[[6,  11, 10, 13, 11,  7], [3,   6,  7,  7,  5,  3], [4,   8,  9, 10, 8,   6], [9,  13, 14, 16, 17, 19], [15, 17, 16, 18, 13, 11]]" data-colors='[ "#b94a48","#feb847","#464646","#428bca","#50204a","#c09853" ]' data-fill="1|3|0" data-fill-color="rgba(150, 197, 246, 0.5)" ></div>
+								<!-- ** ./ area chart ** -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ./ contents -->
+			</div>
+			
+			<!-- sidebar -->
+			<ul id="sidebar" class="nav nav-pills nav-stacked">
+				<li class="avatar">
+					<a href="#">
+						<img src="sample-images/elang-th-01.jpg">
+						<span>Rains Peter Elang Aro</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<i class="icon-home-3"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-params"></i>
+						<span>UI</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="typography.html">
+								<i class="icon-stack-3"></i> Typography
+							</a>
+						</li>
+						<li>
+							<a href="tables.html">
+								<i class="icon-stack-3"></i> Tables
+							</a>
+						</li>
+						<li>
+							<a href="buttons.html">
+								<i class="icon-stack-3"></i> Buttons
+							</a>
+						</li>
+						<li>
+							<a href="icons.html">
+								<i class="icon-stack-3"></i> Icons
+							</a>
+						</li>
+						<li>
+							<a href="dropdowns.html">
+								<i class="icon-stack-3"></i> Dropdowns
+							</a>
+						</li>
+						<li>
+							<a href="tabs.html">
+								<i class="icon-stack-3"></i> Tabs
+							</a>
+						</li>
+						<li>
+							<a href="breadcrumbs-paginations.html">
+								<i class="icon-stack-3"></i> Breadcrums &amp; Paginations
+							</a>
+						</li>
+						<li>
+							<a href="alerts.html">
+								<i class="icon-stack-3"></i> Alerts &amp; Progress Bars
+							</a>
+						</li>
+						<li>
+							<a href="panels.html">
+								<i class="icon-stack-3"></i> Panels
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="active">
+					<a href="charts.html">
+						<i class="icon-bars-3"></i>
+						<span>Charts</span>
+					</a>
+				</li>
+				<li>
+					<a href="forms.html">
+						<i class="icon-browser"></i>
+						<span>Forms</span>
+					</a>
+				</li>
+			</ul>
+			<!-- ./ sidebar -->
+		</div>
+	
+		<!-- base -->
+		<script src="library/js/jquery.js"></script>
+		<script src="library/js/jquery-migrate-1.2.1.js"></script>
+		<script src="library/bootstrap/dist/js/bootstrap.min.js"></script>	
+
+		<!-- addons -->
+		<script src="library/plugins/moment.min.js"></script>
+		<script src="library/plugins/chart-plugins.js"></script>
+		<script src="library/plugins/redactor/redactor.min.js"></script>
+		<script src="library/plugins/jquery.nice-file-input.js"></script>
+		<script src="library/plugins/selectize.min.js"></script>
+		<script src="library/plugins/jquery.icheck.min.js"></script>
+		<script src="library/plugins/ion.rangeSlider.min.js"></script>
+		<script src="library/plugins/pikaday.js"></script>
+		<script src="library/plugins/pikaday.jquery.js"></script>
+		<script src="library/js/loader.js"></script>
+		
+	</body>
+</html>

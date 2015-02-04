@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms - Kuta Admin 3.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="library/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!-- Kuta -->		
+		<link href="library/css/styles.css" rel="stylesheet" media="screen">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="library/bootstrap/assets/js/html5shiv.js"></script>
+		<script src="library/bootstrap/assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- top header navbar -->
+		<nav class="navbar navbar-top-header hidden-xs" role="navigation">
+			<div class="navbar-header">
+				<img class="logo" src="sample-images/logo.png" />
+			</div>
+			
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder=".....">
+				</div>
+				<button type="submit" class="btn btn-no-rc btn-v">Search</button>
+			</form>
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#"><i class="icon-earth"></i></a></li>
+				<li><a href="#"><i class="icon-email"></i></a></li>
+				<li><a href="#"><i class="icon-settings-2"></i></a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-user-6"></i>
+					</a>
+					
+					<ul class="dropdown-menu dropdown-user-account">
+					
+						<li class="account-img-container">
+							<img class="thumb account-img" src="sample-images/elang-th-01.jpg">
+						</li>
+						
+						<li class="account-info">
+							<h3>Rains Peter Elang Aro</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>
+								<a href="#">Edit</a> | <a href="#">Account Settings</a>
+							</p>
+						</li>
+						
+						<li class="account-footer">
+							<a class="btn btn-sm btn-primary btn-flat" href="#">Change avatar</a>
+							<a class="btn btn-sm btn-danger btn-flat" href="#">Logout</a>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- ./ top header navbar -->
+		
+		<div id="main_wrapper">
+			<div id="main_content">
+				
+				<!-- page heading -->
+				<div class="page-heading">				
+					<h2 class="page-title">
+						<i class="icon-browser"></i> Forms
+					</h2>					
+					<div class="page-info hidden-xs">
+						<ul class="stats">
+							<li>
+								<span class="large text-warning">2354</span>
+								<span class="mini">visitors</span>
+							</li>
+							<li>
+								<span class="large text-info">4523</span>
+								<span class="mini">members</span>
+							</li>
+							<li>
+								<span class="large text-success">5673</span>
+								<span class="mini">orders</span>
+							</li>
+							<li>
+								<span class="large text-danger">15</span>
+								<span class="mini">cancellation</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- ./ page heading -->
+				
+				<!-- breadcrumb -->
+				<ol class="breadcrumb breadcrumb-main">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Base CSS</a></li>
+					<li class="active">Forms</li>
+				</ol>
+				<!-- ./ breadcrumb -->
+				
+				<!-- contents -->
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Text input</h3>
+							</div>
+							<div class="panel-body">
+								<!-- small size text input -->
+								<div class="form-group">
+									<label class="control-label">Small input</label>
+									<input class="form-control input-sm" type="text" placeholder="small input">
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- default size text input -->
+								<div class="form-group">
+									<label class="control-label">Default input</label>
+									<input type="text" class="form-control" placeholder="Default input">
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- large text input -->
+								<div class="form-group">
+									<label class="control-label">Large input</label>
+									<input class="form-control input-lg" type="text" placeholder="large input">
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- disabled text input -->
+								<div class="form-group">
+									<label class="control-label">Disabled input</label>
+									<input type="text" class="form-control" placeholder="Disabled input" disabled>
+								</div>
+								
+								<!-- success text input -->
+								<div class="form-group has-success">
+									<label class="control-label" for="inputSuccess">Input with success</label>
+									<input type="text" class="form-control" id="inputSuccess">
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- warning text input -->
+								<div class="form-group has-warning">
+									<label class="control-label" for="inputWarning">Input with warning</label>
+									<input type="text" class="form-control" id="inputWarning">
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- error text input -->
+								<div class="form-group has-error">
+									<label class="control-label" for="inputError">Input with error</label>
+									<input type="text" class="form-control" id="inputError">
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- text input column width-->
+								<h4>Column sizing</h4>
+								<div class="row">
+									<div class="col-md-4 col-lg-4">
+										<input type="text" class="form-control" placeholder="col-lg-4">
+									</div>
+									<div class="col-md-8 col-lg-8">
+										<input type="text" class="form-control" placeholder="col-lg-8">
+									</div>
+								</div>								
+								<hr />								
+								<div class="row">
+									<div class="col-md-6 col-lg-6">
+										<input type="text" class="form-control" placeholder="col-lg-6">
+									</div>
+									<div class="col-md-6 col-lg-6">
+										<input type="text" class="form-control" placeholder="col-lg-6">
+									</div>
+								</div>								
+								<hr />								
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Textarea</h3>
+							</div>
+							<div class="panel-body">
+								<!-- basic textarea -->
+								<div class="form-group">
+									<label class="control-label">Basic textarea</label>
+									<textarea class="form-control" rows="3"></textarea>
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- text editor -->
+								<div class="form-group">
+									<label class="control-label">Text editor</label>
+									<textarea class="form-control fullRedactor" rows="3"></textarea>
+									<span class="help-block text-right">Full text editor</span>
+									
+									<hr />
+									
+									<textarea class="form-control statusRedactor" rows="3"></textarea>
+									<span class="help-block text-right">Simple text editor</span>
+									
+									<hr />
+									
+									<textarea class="form-control commentRedactor" rows="3"></textarea>
+									<span class="help-block text-right">Simple text editor</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Selects</h3>
+							</div>
+							<div class="panel-body">
+								<!-- basic single select -->
+								<div class="form-group">
+									<label class="control-label">Basic single select</label>
+									<select class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- basic multiple select -->
+								<div class="form-group">
+									<label class="control-label">Basic multiple select</label>
+									<select multiple class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- custom single select -->
+								<div class="form-group">
+									<label class="control-label">Single select</label>
+									<select id="select-beast" class="form-control selectize-single" placeholder="Select a person...">
+										<option value="">Select a person...</option>
+										<option value="4">Eric Huntsman</option>
+										<option value="1">Clark Kent</option>
+										<option value="3">Bruce Wayne</option>
+										<option value="5">Silver Fox</option>
+									</select>
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- custom multiple select -->
+								<div class="form-group">
+									<label class="control-label">Multiple select</label>
+									<select id="select-multiple-beast" multiple class="form-control selectize-multiple" placeholder="Select persons...">
+										<option value="">Select person...</option>
+										<option value="4">Eric Huntsman</option>
+										<option value="1">Clark Kent</option>
+										<option value="3">Bruce Wayne</option>
+										<option value="5">Silver Fox</option>
+									</select>
+									<span class="help-block text-right">Help block text</span>
+								</div>
+								
+								<!-- custom tag input -->
+								<div class="form-group">
+									<label class="control-label">Tags</label>
+									<input type="text" id="input-tags" class="form-control selectize-tags" value="travel,adventure,asia">
+									<span class="help-block text-right">Help block text</span>
+								</div>
+							</div>
+						</div>
+						
+						<!-- date picker -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Date Picker</h3>
+							</div>
+							<div class="panel-body">
+								<div class="form-group">
+									<label class="control-label">Select date</label>
+									<input type="text" class="form-control datepicker" placeholder="Select date" data-dateformat="DD-MM-YYYY">
+									<span class="help-block text-right">Help block text</span>
+								</div>
+							</div>
+						</div>
+						
+						<!-- file input -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">File input</h3>
+							</div>
+							<div class="panel-body">
+								<div class="form-group">
+									<label class="control-label">Select file</label>
+									<input type="file" name="fileInput" class="niceFileInput" data-btn-class="btn-primary"  />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">						
+						<!-- checkboxes and radios -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Checkboxes and radios</h3>
+							</div>
+							<div class="panel-body">
+								<h4>Standard Checkboxes and Radios</h4>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that&mdash;be sure to include why it's great
+									</label>
+								</div>
+
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+										Option one is this and that&mdash;be sure to include why it's great
+									</label>
+								</div>
+								
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										Option two can be something else and selecting it will deselect option one
+									</label>
+								</div>
+								
+								<hr />
+								
+								<h4>Inline checkboxes</h4>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+								</label>
+								
+								<hr />
+								
+								<h4>Custom styles</h4>	
+								<div class="checkbox icheck icheck-default">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-default">
+									<label>
+										<input type="radio" name="opt1" id="opt1" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-default">
+									<label>
+										<input type="radio" name="opt1" id="opt2" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-aero">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-aero">
+									<label>
+										<input type="radio" name="opt2" id="opt21" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-aero">
+									<label>
+										<input type="radio" name="opt2" id="opt22" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-blue">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-blue">
+									<label>
+										<input type="radio" name="opt3" id="opt31" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-blue">
+									<label>
+										<input type="radio" name="opt3" id="opt32" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-green">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-green">
+									<label>
+										<input type="radio" name="opt4" id="opt41" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-green">
+									<label>
+										<input type="radio" name="opt4" id="opt42" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-grey">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-grey">
+									<label>
+										<input type="radio" name="opt5" id="opt51" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-grey">
+									<label>
+										<input type="radio" name="opt5" id="opt52" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-orange">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-orange">
+									<label>
+										<input type="radio" name="opt6" id="opt61" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-orange">
+									<label>
+										<input type="radio" name="opt6" id="opt62" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-pink">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-pink">
+									<label>
+										<input type="radio" name="opt7" id="opt71" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-pink">
+									<label>
+										<input type="radio" name="opt7" id="opt72" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-purple">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-purple">
+									<label>
+										<input type="radio" name="opt8" id="opt81" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-purple">
+									<label>
+										<input type="radio" name="opt8" id="opt82" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-red">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-red">
+									<label>
+										<input type="radio" name="opt9" id="opt91" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-red">
+									<label>
+										<input type="radio" name="opt9" id="opt92" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+								
+								<hr />
+								
+								<div class="checkbox icheck icheck-yellow">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that
+									</label>
+								</div>
+								<div class="radio icheck icheck-yellow">
+									<label>
+										<input type="radio" name="opt10" id="opt101" value="option1" checked>
+										Option one is this and that
+									</label>
+								</div>								
+								<div class="radio icheck icheck-yellow">
+									<label>
+										<input type="radio" name="opt10" id="opt102" value="option2">
+										Option two can be something else
+									</label>
+								</div>
+							</div>
+						</div>
+						
+						<!-- sliders -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Range Sliders</h3>
+							</div>
+							<div class="panel-body">
+								<input type="text" id="sliderSample1" name="sliderSample1" class="kuta-slider" value="10;100" data-type="single" data-hasgrid="true" />
+								
+								<hr />
+								
+								<input type="text" id="sliderSample2" name="sliderSample2" class="kuta-slider" value="10;100" data-type="double" data-hasgrid="true" data-from="30" data-to="70" />
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- ./ contents -->
+			</div>
+			
+			<!-- sidebar -->
+			<ul id="sidebar" class="nav nav-pills nav-stacked">
+				<li class="avatar">
+					<a href="#">
+						<img src="sample-images/elang-th-01.jpg">
+						<span>Rains Peter Elang Aro</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<i class="icon-home-3"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-params"></i>
+						<span>UI</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="typography.html">
+								<i class="icon-stack-3"></i> Typography
+							</a>
+						</li>
+						<li>
+							<a href="tables.html">
+								<i class="icon-stack-3"></i> Tables
+							</a>
+						</li>
+						<li>
+							<a href="buttons.html">
+								<i class="icon-stack-3"></i> Buttons
+							</a>
+						</li>
+						<li>
+							<a href="icons.html">
+								<i class="icon-stack-3"></i> Icons
+							</a>
+						</li>
+						<li>
+							<a href="dropdowns.html">
+								<i class="icon-stack-3"></i> Dropdowns
+							</a>
+						</li>
+						<li>
+							<a href="tabs.html">
+								<i class="icon-stack-3"></i> Tabs
+							</a>
+						</li>
+						<li>
+							<a href="breadcrumbs-paginations.html">
+								<i class="icon-stack-3"></i> Breadcrums &amp; Paginations
+							</a>
+						</li>
+						<li>
+							<a href="alerts.html">
+								<i class="icon-stack-3"></i> Alerts &amp; Progress Bars
+							</a>
+						</li>
+						<li>
+							<a href="panels.html">
+								<i class="icon-stack-3"></i> Panels
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="charts.html">
+						<i class="icon-bars-3"></i>
+						<span>Charts</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="forms.html">
+						<i class="icon-browser"></i>
+						<span>Forms</span>
+					</a>
+				</li>
+			</ul>
+			<!-- ./ sidebar -->
+		</div>
+	
+		<!-- base -->
+		<script src="library/js/jquery.js"></script>
+		<script src="library/js/jquery-migrate-1.2.1.js"></script>
+		<script src="library/bootstrap/dist/js/bootstrap.min.js"></script>	
+
+		<!-- addons -->
+		<script src="library/plugins/moment.min.js"></script>
+		<script src="library/plugins/chart-plugins.js"></script>
+		<script src="library/plugins/redactor/redactor.min.js"></script>
+		<script src="library/plugins/jquery.nice-file-input.js"></script>
+		<script src="library/plugins/selectize.min.js"></script>
+		<script src="library/plugins/jquery.icheck.min.js"></script>
+		<script src="library/plugins/ion.rangeSlider.min.js"></script>
+		<script src="library/plugins/pikaday.js"></script>
+		<script src="library/plugins/pikaday.jquery.js"></script>
+		<script src="library/js/loader.js"></script>
+		
+	</body>
+</html>
